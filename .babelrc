@@ -1,0 +1,11 @@
+{
+  "presets": [
+    "flow",
+    ["env", {
+      "targets": {
+        "browsers": ["last 1 version"]
+      },
+      "useBuiltIns": true
+    }]
+  ]
+}

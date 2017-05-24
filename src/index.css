@@ -1,0 +1,24 @@
+:root {
+    --brand-primary-color: #282B30;
+}
+
+*,
+*:after,
+*before {
+    box-sizing: inherit;
+}
+
+html {
+    background-image: url('./images/bg.jpg');
+    background-repeat: no-repeat;
+    background-position: top center;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0.75);
+    min-height: 100%;
+    min-width: 100%;
+}
