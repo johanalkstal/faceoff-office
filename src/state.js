@@ -20,7 +20,7 @@ export const update = (action: Object) => {
       return
 
     default:
-      model(model())
+      model
   }
 }
 

@@ -31,4 +31,4 @@ m.route.prefix('')
 /**
  * Mounts the routing enabled application into the root element.
  */
-m.route(document.getElementById('root'), '/', routes)
+m.route(document.getElementById('root'), '/', routes(model))
