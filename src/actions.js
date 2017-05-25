@@ -3,7 +3,7 @@ import { update } from './state'
 
 export const UPDATE_USER = 'UPDATE_USER'
 
-const createAction = (type: string) => (payload: Object) => ({
+const createAction = (type: string) => (payload: Object) => update({
   type,
   payload
 })
