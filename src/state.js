@@ -3,18 +3,11 @@ import stream from 'mithril/stream'
 import { UPDATE_USER } from './actions'
 
 const { assign } = Object
-const initialModel = {
-  isAuthenticated: false,
-  user: {
-    firstName: 'Johan',
-    lastName: 'Alkstål'
-  }
-}
 
 /**
  * The application model stream.
  */
-export const model = stream(initialModel)
+export const model = stream()
 
 /**
  * The update function that updates the model stream.
