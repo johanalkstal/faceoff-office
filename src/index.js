@@ -1,8 +1,10 @@
 // @flow
 import 'babel-polyfill'
 import m from 'mithril'
+import home from './views/home'
+import layout from './views/layout/layout'
+import signIn from './views/sign-in'
 import { model } from './state'
-import routes from './routes'
 import 'normalize.css'
 import './index.css'
 
@@ -21,6 +23,20 @@ const initialModel = {
  * Set the application model stream.
  */
 model(initialModel)
+
+/**
+ * Application routes.
+ */
+const routes = {
+  '/': {
+    onmatch: () => model().isAuthenticated
+      ? m(layout(model), m(home(model)))
+      : m.route.set('/sign-in')
+  },
+  '/sign-in': {
+    render: () => m(layout(model), m(signIn(model)))
+  }
+}
 
 /**
  * Enables browser history mode by removing
