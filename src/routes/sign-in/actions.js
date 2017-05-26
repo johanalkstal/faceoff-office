@@ -1,9 +1,7 @@
 // @flow
-import { pipe } from 'ramda'
-import { update } from '../../state'
-import { updateFirstName, updateLastName } from '../../actions'
+import { updateUser } from '../../actions'
 
 export default {
-  updateFirstName: pipe(updateFirstName, update),
-  updateLastName: pipe(updateLastName, update)
+  updateFirstName: (firstName: string) => updateUser({ firstName }),
+  updateLastName: (lastName: string) => updateUser({ lastName })
 }

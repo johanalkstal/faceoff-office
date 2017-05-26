@@ -1,7 +1,7 @@
 // @flow
 import 'babel-polyfill'
 import m from 'mithril'
-import { model } from './state'
+import { start } from './state'
 import routes from './routes'
 import 'normalize.css'
 import './index.css'
@@ -20,7 +20,7 @@ const initialModel = {
 /**
  * Set the application model stream.
  */
-model(initialModel)
+const model = start(initialModel)
 
 /**
  * Enables browser history mode by removing
