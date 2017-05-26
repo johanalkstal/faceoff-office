@@ -3,8 +3,8 @@ import { updateUser } from './actions'
 import { start, update } from './state'
 
 describe('update', () => {
-  test('is null until start() is called', () => {
-    expect(update).toEqual(null)
+  test('throws an error until start() is called', () => {
+    expect(update).toThrow('Update stream is not set. Run start() before calling update.')
   })
 })
 

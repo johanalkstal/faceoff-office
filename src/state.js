@@ -8,7 +8,9 @@ const { assign } = Object
  * Every function given to the stream must have the following type:
  * (model) => model
  */
-export let update = null
+export let update = () => {
+  throw new Error('Update stream is not set. Run start() before calling update.')
+}
 
 /**
  * Calls the update function from the update stream with the model
