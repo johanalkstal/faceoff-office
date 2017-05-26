@@ -1,3 +1,5 @@
 .topBar {
     background-color: var(--brand-primary-color);
+    border-bottom: 1px solid var(--brand-borders-color);
+    line-height: 3;
 }
