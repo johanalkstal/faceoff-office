@@ -3,8 +3,8 @@ import 'babel-polyfill'
 import m from 'mithril'
 import { start } from './state'
 import routes from './routes'
-import 'normalize.css'
-import './index.css'
+import './styles/normalize.css'
+import './styles/elements.css'
 
 /**
  * Initial application model.

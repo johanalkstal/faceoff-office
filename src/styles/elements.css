@@ -1,0 +1,54 @@
+:root {
+    --brand-primary-color: #282B30;
+    --space-unit: 8px;
+}
+
+*,
+*:after,
+*before {
+    box-sizing: inherit;
+}
+
+html {
+    background-image: url('../images/bg.jpg');
+    background-repeat: no-repeat;
+    background-position: top center;
+    box-sizing: border-box;
+    line-height: 1.25;
+    height: 100%;
+    width: 100%;
+}
+
+html,
+input,
+textarea {
+    font-family: 'Quicksand', sans-serif;
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0.75);
+    min-height: 100%;
+    min-width: 100%;
+}
+
+h1, h2, h3 {
+    margin-bottom: calc(var(--space-unit) * 3);
+    margin-top: 0;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 16px;
+}
+
+p {
+    margin-bottom: calc(var(--space-unit) * 2);
+    margin-top: 0;
+}
