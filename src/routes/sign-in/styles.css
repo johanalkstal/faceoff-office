@@ -1,5 +1,33 @@
+.box {
+    composes: box from '../../styles/composables.css';
+    margin-left: var(--space-unit);
+    margin-right: var(--space-unit);
+    padding: calc(var(--space-unit) * 3);
+    width: calc(var(--space-unit) * 50);
+}
+
+.button {
+    composes: defaultButton from '../../styles/composables.css';
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.input {
+    margin-bottom: calc(var(--space-unit) * 4);
+}
+
+.signIn {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top: calc(var(--space-unit) * 3);
+}
+
 .title {
-    color: blue
+    margin-bottom: calc(var(--space-unit) * 3);
 }
 
 .text {

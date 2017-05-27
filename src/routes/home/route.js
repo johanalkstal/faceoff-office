@@ -4,8 +4,12 @@ import layout from '../../views/layout/view'
 import view from './view'
 import viewModel from './view-model'
 
-export default (model: Object) => ({
-  onmatch: () => model.isAuthenticated
-  ? m(layout, { model }, m(view, { model: model.map(viewModel) }))
-  : m.route.set('/sign-in')
+export default (model: Function) => ({
+  onmatch: () => {
+    if (!model().isAuthenticated) {
+      m.route.set('/sign-in')
+    }
+  },
+  render: () =>
+    m(layout, { model }, m(view, { model: model.map(viewModel) }))
 })

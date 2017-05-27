@@ -1,7 +1,10 @@
 :root {
-    --brand-borders-color: #000000;
-    --brand-primary-color: #282B30;
-    --brand-primary-text-color: #FFFFFF;
+    --brand-border-color: hsl(0, 0%, 0%);
+    --brand-primary-color: hsl(217, 9%, 17%);
+    --brand-primary-text-color: hsl(0, 0%, 100%);
+    --brand-secondary-color: hsl(217, 7%, 23%);
+    --button-default-color: hsl(207, 64%, 45%);
+    --button-default-hover-color: hsl(207, 64%, 55%);
     --space-unit: 8px;
 }
 
@@ -17,21 +20,21 @@ html {
     background-position: top center;
     box-sizing: border-box;
     color: var(--brand-primary-text-color);
+    font-family: 'Quicksand', sans-serif;
     line-height: 1.25;
     height: 100%;
     width: 100%;
 }
 
-html,
-input,
-textarea {
-    font-family: 'Quicksand', sans-serif;
-}
-
 body {
-    background-color: rgba(54, 57, 62, 0.9);
+    background-color: hsla(217, 7%, 23%, 0.9);
     min-height: 100%;
     min-width: 100%;
+}
+
+button {
+    font-family: 'Quicksand', sans-serif;
+    font-size: inherit;
 }
 
 h1, h2, h3 {
@@ -49,6 +52,26 @@ h2 {
 
 h3 {
     font-size: 16px;
+}
+
+input {
+    background-color: var(--brand-primary-color);
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 2px hsl(0, 0%, 0%) inset;
+    box-sizing: border-box;
+    color: var(--brand-primary-text-color);
+    display: block;
+    font-family: 'Quicksand', sans-serif;
+    font-size: inherit;
+    padding: calc(var(--space-unit) * 2) calc(var(--space-unit) * 3);
+    width: 100%;
+}
+
+label {
+    cursor: pointer;
+    display: block;
+    margin-bottom: var(--space-unit);
 }
 
 p {

@@ -1,7 +1,7 @@
 // @flow
 import m from 'mithril'
-import home from './routes/home/route'
-import signIn from './routes/sign-in/route'
+import home from './home/route'
+import signIn from './sign-in/route'
 
 /**
  * Application routes.

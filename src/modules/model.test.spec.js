@@ -1,6 +1,6 @@
 /* globals describe, test, expect */
 import { updateUser } from './actions'
-import { start, update } from './state'
+import { start, update } from './model'
 
 describe('update', () => {
   test('throws an error until start() is called', () => {
